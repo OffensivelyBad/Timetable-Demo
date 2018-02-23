@@ -9,7 +9,7 @@
 import UIKit
 import SpreadsheetView
 
-class HourCell: Cell {
+class HourCell: SpreadsheetViewCell {
     let label = UILabel()
 
     override init(frame: CGRect) {
@@ -31,7 +31,7 @@ class HourCell: Cell {
     }
 }
 
-class ChannelCell: Cell {
+class ChannelCell: SpreadsheetViewCell {
     let label = UILabel()
 
     var channel = "" {
@@ -58,7 +58,7 @@ class ChannelCell: Cell {
     }
 }
 
-class SlotCell: Cell {
+class SlotCell: SpreadsheetViewCell {
     @IBOutlet private weak var minutesLabel: UILabel!
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var tableHighlightLabel: UILabel!
@@ -88,7 +88,7 @@ class SlotCell: Cell {
     }
 }
 
-class BlankCell: Cell {
+class BlankCell: SpreadsheetViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = UIColor(white: 0.9, alpha: 1)
@@ -99,7 +99,7 @@ class BlankCell: Cell {
     }
 }
 
-class TestCell: Cell {
+class TestCell: SpreadsheetViewCell {
     
     var hasSingles = false
     var hasMultis = false

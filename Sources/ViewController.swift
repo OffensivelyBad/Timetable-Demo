@@ -43,7 +43,7 @@ class ViewController: UIViewController, SpreadsheetViewDataSource, SpreadsheetVi
         let hairline = 1 / UIScreen.main.scale
         spreadsheetView.intercellSpacing = CGSize(width: hairline, height: hairline)
         spreadsheetView.gridStyle = .solid(width: hairline, color: .lightGray)
-        spreadsheetView.circularScrolling = CircularScrolling.Configuration.horizontally.rowHeaderStartsFirstColumn
+        spreadsheetView.circularScrolling = SpreadsheetViewCircularScrolling.Configuration.horizontally.rowHeaderStartsFirstColumn
 
         hourFormatter.calendar = Calendar(identifier: .gregorian)
         hourFormatter.locale = Locale(identifier: "en_US_POSIX")
@@ -116,7 +116,7 @@ class ViewController: UIViewController, SpreadsheetViewDataSource, SpreadsheetVi
         return mergedCells
     }
 
-    func spreadsheetView(_ spreadsheetView: SpreadsheetView, cellForItemAt indexPath: IndexPath) -> Cell? {
+    func spreadsheetView(_ spreadsheetView: SpreadsheetView, cellForItemAt indexPath: IndexPath) -> SpreadsheetViewCell? {
         if indexPath.column == 0 && indexPath.row == 0 {
             return nil
         }

@@ -15,8 +15,32 @@
 		140D6D2E1EC425FF00DFF8C1 /* SlotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 140D6D2D1EC425FF00DFF8C1 /* SlotCell.xib */; };
 		140D6D301EC4270D00DFF8C1 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140D6D2F1EC4270D00DFF8C1 /* Cells.swift */; };
 		140D6D321EC4273900DFF8C1 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140D6D311EC4273900DFF8C1 /* Models.swift */; };
-		29EA4D04203DE41000A785AF /* SpreadsheetView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29EA4D05203DE41000A785AF /* SpreadsheetView.framework */; };
+		2920A2322040BFD1005C8E75 /* SpreadsheetView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2920A22D2040BF77005C8E75 /* SpreadsheetView.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2920A22C2040BF77005C8E75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2920A2262040BF76005C8E75 /* SpreadsheetView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 149E6A691EADE047000D851D;
+			remoteInfo = SpreadsheetView;
+		};
+		2920A22E2040BF77005C8E75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2920A2262040BF76005C8E75 /* SpreadsheetView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 149E6A721EADE047000D851D;
+			remoteInfo = SpreadsheetViewTests;
+		};
+		2920A2302040BF77005C8E75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2920A2262040BF76005C8E75 /* SpreadsheetView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 149E6AA31EADE19F000D851D;
+			remoteInfo = HostApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		140D6D271EC41F5100DFF8C1 /* Embed Frameworks */ = {
@@ -42,6 +66,7 @@
 		140D6D2D1EC425FF00DFF8C1 /* SlotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SlotCell.xib; sourceTree = "<group>"; };
 		140D6D2F1EC4270D00DFF8C1 /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
 		140D6D311EC4273900DFF8C1 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		2920A2262040BF76005C8E75 /* SpreadsheetView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SpreadsheetView.xcodeproj; path = ../../../Framework/SpreadsheetView.xcodeproj; sourceTree = "<group>"; };
 		29EA4D05203DE41000A785AF /* SpreadsheetView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SpreadsheetView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -50,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29EA4D04203DE41000A785AF /* SpreadsheetView.framework in Frameworks */,
+				2920A2322040BFD1005C8E75 /* SpreadsheetView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +115,7 @@
 		140D6D281EC41F5E00DFF8C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2920A2262040BF76005C8E75 /* SpreadsheetView.xcodeproj */,
 				29EA4D05203DE41000A785AF /* SpreadsheetView.framework */,
 			);
 			name = Frameworks;
@@ -112,6 +138,16 @@
 				140D6D191EC41F3500DFF8C1 /* Assets.xcassets */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		2920A2272040BF76005C8E75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2920A22D2040BF77005C8E75 /* SpreadsheetView.framework */,
+				2920A22F2040BF77005C8E75 /* SpreadsheetViewTests.xctest */,
+				2920A2312040BF77005C8E75 /* HostApp.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,12 +199,42 @@
 			mainGroup = 140D6D061EC41F3500DFF8C1;
 			productRefGroup = 140D6D101EC41F3500DFF8C1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2920A2272040BF76005C8E75 /* Products */;
+					ProjectRef = 2920A2262040BF76005C8E75 /* SpreadsheetView.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				140D6D0E1EC41F3500DFF8C1 /* Timetable */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2920A22D2040BF77005C8E75 /* SpreadsheetView.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SpreadsheetView.framework;
+			remoteRef = 2920A22C2040BF77005C8E75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2920A22F2040BF77005C8E75 /* SpreadsheetViewTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SpreadsheetViewTests.xctest;
+			remoteRef = 2920A22E2040BF77005C8E75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2920A2312040BF77005C8E75 /* HostApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HostApp.app;
+			remoteRef = 2920A2302040BF77005C8E75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		140D6D0D1EC41F3500DFF8C1 /* Resources */ = {
